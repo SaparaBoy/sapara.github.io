@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="sty.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body onload="load()">
+    <div class="loader">
+      <div class="boll"></div>
+      <div class="boll"></div>
+      <div class="boll"></div>
+    </div>
+
+    <input type="checkbox" id="menubtn" />
+    <div class="main">
+      <div class="pagebtn">
+        <a href="#"><p>home</p></a>
+        <a href="#part1"><p>portfolio</p></a>
+        <a href="#part2"><p>skills</p></a>
+        <a href="#part3"><p>contect</p></a>
+        <a
+          style="display:none; background: #62aa66;"
+          id="state1"
+          onclick="checkstate(1)"
+          ><p style="background:#62aa66;">scroll:on</p></a
+        >
+        <a style="background:#d45454;" id="state2" onclick="checkstate(2)">
+          <p style="background:#d45454;">scroll:off</p>
+        </a>
+      </div>
+      <div style="display:none;" id="progresbar">
+        <span id="bar"></span>
+      </div>
+      <div class="menupanel">
+        <h1>menu</h1>
+        <a href="#part1" onclick="hide(1)">portfolio</a>
+        <a href="#part2" onclick="hide(1)">Education | skills</a>
+        <a href="#part3" onclick="hide(1)">contect</a>
+        <a href="index.html">dark mode</a>
+      </div>
+      <div class="home col-s-12">
+        <div id="logotext">mr.japu</div>
+        <div class="links" id="links">
+          <a href="#part1">portfolio</a>
+          <a href="#part2">Education | skills</a>
+          <a href="#part3">contect</a>
+        </div>
+        <div class="date"></div>
+        <div class="day"></div>
+        <div class="menubar col-s-12">
+          <a style="display:none;" href="" id="logoimg"
+            ><img src="img/mr.png" alt=""
+          /></a>
+          <label for="menubtn">
+            <div id="t1" onclick="hide(2)" class="toggle">
+              <span></span>
+              <span></span>
+              <span></span></div
+          ></label>
+          <label for="menubtn">
+            <div id="t2" onclick="hide(3)" class="toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </label>
+        </div>
+        <div class="contener01 col-s-12">
+          <div class="social col-s-12 col-m-6">
+            <h3>follow me</h3>
+            <a target="_blank" href="https://www.facebook.com/jaypal.sapara.50"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a target="_blank" href="https://www.instagram.com/sapara_boy/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a target="_blank" href="https://twitter.com/sapara_jaypal"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+          <div class="profile col-s-12 col-m-6">
+            <a
+              onclick="show(1)"
+              href="about/about.html"
+              style="font-family:roboto; text-transform:uppercase; text-decoration:none;"
+              >view profile</a
+            >
+          </div>
+        </div>
+      </div>
+      <div id="part1" class="portfolio col-s-12">
+        <h1 class="col-s-12">portfolio</h1>
+        <div class="cardcontener col-s-12">
+          <div class="card col-s-12 col-m-6 col-xl-3">
+            <div
+              class="col-s-12"
+              id="cardimg"
+              style="background: url('img/photoshop.jpg') no-repeat center center;
+  background-size: cover;"
+            >
+              <i class="fab fa-adobe"></i>
+            </div>
+            <div class="col-s-12" style="height:auto;">
+              <h2>photoshop</h2>
+              <p>
+               I have been using photoshop for a long time and I've edited a lot of photos so far.
+               some examples: <b> Day to night mode, face cleaning, remove are pimples, object hidding, object color changing etc.</b> If your want to see my work than click on  <a target="_blank" style="color:dodgerblue" href="pages/portfolio/photoshop.html">more</a>
+              </p>
+            </div>
+          </div>
+          <div class="card col-s-12 col-m-6 col-xl-3">
+            <div
+              class="col-s-12"
+              id="cardimg"
+              style="background: url('img/web.jpg') no-repeat center center;
+  background-size: cover;"
+            >
+              <i class="fas fa-globe-americas"></i>
+            </div>
+            <div class="col-s-12" style="height:auto;">
+              <h2>website</h2>
+              <p>
+                I like making website and their process. I know something languages for disigning a websites in below:<br>
+               <b> Html, Css, JavaScript and consept of Boostrap.</b> if you want to see my work or design of website than click on <a target="_blank" style="color:dodgerblue" href="pages/website/website.html">more</a>
+              </p>
+            </div>
+          </div>
+          <div class="card col-s-12 col-m-6 col-xl-3">
+            <div
+              class="col-s-12"
+              id="cardimg"
+              style="background: url('img/illu.jpg') no-repeat center center;
+  background-size: cover;"
+            >
+              <i class="fas fa-pen-nib"></i>
+            </div>
+            <div class="col-s-12" style="height:auto;">
+              <h2>illustrator</h2>
+              <p>
+                I have been working on illustrator since many times and I like it, and I also like making a logos,card designe and arts.<br>
+                I did it : <b> vector art of me, my logo of Japu, heart art and etc.</b> if you want to see my illustrator work than click on <a target="_blank" style="color:dodgerblue" href="pages/illustrator/illu.html"/>more</a>
+              </p>
+            </div>
+          </div>
+          <div class="card col-s-12 col-m-6 col-xl-3">
+            <div
+              class="col-s-12"
+              id="cardimg"
+              style="background: url('img/drawing.jpeg') no-repeat center center;
+  background-size: cover;"
+            >
+              <i class="fas fa-pencil-ruler"></i>
+            </div>
+            <div class="col-s-12" style="height:auto;">
+              <h2>drawing</h2>
+              <p>
+                Drawing is very good to me since childhood. Whenever I get time in childhood I start painting or drawing.
+                so far I have made lots of drawings. <b> house, person, krishna, text drawing (typography), rangoli ( indian festival design) etc.</b> click on <a target="_blank" style="color:dodgerblue" href="pages/drawing/draw.html">more</a> to see my drawing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="part2" class="skills col-s-12">
+        <h1 class="col-s-12">skills</h1>
+        <div class="cardcontener col-s-12">
+   
+          <div class="skillinfo col-s-12 col-m-6">
+          
+            <h3>myskills</h3>
+          <center> <ul>
+            <li id="dot"><i class="fas fa-circle"></i></li>
+              <li>  I do photoshop of 
+              basic and stander <br>(level 46%)</li>
+              <li id="dot"><i class="fas fa-circle"></i></li>
+              <li>I also draw a painting or drawing. <br>(level 57%)</li>
+              <li id="dot"><i class="fas fa-circle"></i></li>
+              <li> I know UI desging in web developing. <br>(level 42%)  </li>
+              <li id="dot"><i class="fas fa-circle"></i></li>
+              <li>logo designing and art designing. <br>(level 36%) </li>
+            </ul></center>
+             
+          </div>
+          <div class="skillinfo col-s-12 col-m-6">
+            <h3>Education</h3>
+           <center> <ul>
+             <li id="dot"><i class="fas fa-circle"></i></li>
+              <li>12th Science complited with 48% in 2017</li>
+              <li id="dot"><i class="fas fa-circle"></i></li>
+              <li>BCA sem 1,2,3 is complited</li>
+              <li id="dot"><i class="fas fa-circle"></i></li>
+              <li>Course on Computer Concepts (CCC)</li>
+             <!-- <li id="dot"><i class="fas fa-circle"></i></li>
+              <li>somethig</li>-->
+            </ul></center>
+          </div>
+          <div class="skillinfo col-s-12 col-m-12">
+            <h3>i know that</h3>
+            <center><ul >
+              <li id="know"><i class="fab fa-html5"><h5>html</h5></i><i class="fab fa-css3-alt"><h5>css</h5></i><i class="fab fa-js"><h5>JavaScript</h5></i><i class="fab fa-php"><h5>php</h5></i></li>
+            </ul></center>
+          </div>
+        </div>
+      </div>
+      <div id="part3" class="contect col-s-12">
+        <h1 class="col-s-12">contect</h1>
+        <div class="cardcontener col-s-12">
+          <div class="conn col-s-12 col-xl-6">
+            <h3>sapara jaypal</h3>
+            <div class="conninfo col-s-6 col-xl-12">
+              <h4>address</h4>
+            <center> <!--
+                                        <p>
+                                            At.Karangadh, Ta.Wadhwan, Dis-Surendranagar -363040 Gujarat,India.
+                                        </p>-->
+            <div id="mapbox" class=" col-s-6 col-m-12 col-xl-12">
+              <i onclick="map()" id="map" class="fas fa-map-marked-alt"></i>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1062.4611324170844!2d71.66158347124889!3d22.800202002895066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc14b7705af702f3b!2sTapovan!5e1!3m2!1sen!2sin!4v1551681355119"
+                width="80%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div></center>
+            </div>
+            <div class="conninfo col-s-6 col-xl-12">
+              <h4>phone</h4>
+          <center><p>CHAT WITH ME</p> <a href="https://wa.me/8758206058"><p class="phone">
+                <i class="fab fa-whatsapp"> </i>
+              </p></a>
+              
+            </center>
+            </div>
+            <div class="conninfo col-s-6 col-xl-12">
+              <h4>email</h4>
+              <center><p id="email">
+               saparajaypal0007@gmail.com
+              </p></center>
+            </div>
+     
+            <div class="conninfo col-s-6 col-m-12">
+              <h4>social media</h4>
+            <center> <p id="slink">
+                <a target="_blank" href="https://www.facebook.com/jaypal.sapara.50"><i class="fab fa-facebook-f"></i></a>
+                <a target="_blank" href="https://www.instagram.com/sapara_boy/"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://twitter.com/sapara_jaypal"><i class="fab fa-twitter"></i></a>
+                <a target="_blank" href="https://dribbble.com/Japu"><i class="fab fa-dribbble"></i></a>
+              </p></center>
+            </div>
+          </div>
+          <div class="conn col-s-12 col-xl-6">
+            <h3>feedback</h3>
+            <form action="umail.php" method="POST">
+            <table>
+              <tr>
+                <td>
+                  <center>
+                    <textarea
+                      name="msg"
+                      id=""
+                      cols="30"
+                      rows="10"
+                      placeholder="Write something feedback..."
+                    ></textarea>
+                  </center>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center>
+                    <input type="text" name="uname" placeholder="enter your name" />
+                  </center>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center>
+                    <input type="text" name="email" placeholder="ex: xyz@abc.com" />
+                  </center>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center><input type="submit" value="send" /></center>
+                </td>
+              </tr>
+            </table>
+            </form>
+          </div>
+          <div class="conn col-s-12 col-xl-6">
+            <h3 id="subtext">subscribe for get new updates</h3>
+            <form action="subscribe.php" method="POST">
+              <table id="sub">
+                <tr>
+                  <td>
+                    <center>
+                      <input type="text" name="uname" placeholder="enter your name" />
+                    </center>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <center>
+                      <input type="text" name="email" placeholder="ex: xyz@abc.com" />
+                    </center>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <center><input type="submit" value="subscribe" /></center>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+          
+        </div>
+        <div class="footer col-s-12"><p id="footertext"></p></div>
+      </div>
+    </div>
+    <script src="java.js"></script>
+  </body>
+</html>

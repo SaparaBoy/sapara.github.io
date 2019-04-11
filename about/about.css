@@ -1,0 +1,26 @@
+@import url("../rsp/myrsp.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+* { padding: 0; margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: roboto; scroll-behavior: smooth; }
+* a { text-decoration: none; }
+
+div { float: left; border: 0px solid red; }
+
+i { position: fixed; right: 50px; top: 50px; font-size: 40px; color: #585858; }
+
+::-webkit-scrollbar { display: none; }
+
+h1 { width: 100%; float: left; text-align: center; text-transform: uppercase; color: #ffebce; letter-spacing: 5px; padding: 50px 0; }
+
+p { padding: 20px 50px; text-align: justify; color: #585858; font-size: 30px; }
+
+.img { background: url("me.jpg") no-repeat center center; background-size: cover; height: 100vh; }
+
+.text { height: 100vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.main { height: auto; background: #b4d6c6; overflow: hidden; }
+
+@media only screen and (min-width: 768px) { p { font-size: 30px; } }
+@media only screen and (min-width: 992px) { p { font-size: 50px; padding: 20px 10%; } }
+
+/*# sourceMappingURL=about.css.map */
